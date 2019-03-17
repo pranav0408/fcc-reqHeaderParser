@@ -20,7 +20,7 @@ app.get("/", function (req, res) {
 });
 
 app.get("/api/whoami",(req,res)=>{
-      var out = parse();
+      var out = parse(req.headers);
       res.json(out)
 })
 
